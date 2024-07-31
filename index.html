@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 id="title">Basketball Survey Form</h1>
+  <p class="help_text_style" id="description">Tell us about your basketball experience</p>
+  <form id="survey-form">
+    <fieldset>
+      <label class="help_text_style" for="name" id="name-label">Name: 
+        <input id="name" name="name" type="text" placeholder="Enter your name" required />
+      </label>
+      <label for="email" id="email-label">Email: 
+        <input id="email" name="email" type="email" placeholder="Enter your email" required />
+      </label>
+      <label id="number-label" for="age">Age (optional)
+        <input id="number" name="age" type="number" min="10" max="99" placeholder="Enter your age" />
+      </label>
+      <label for="referrer">Which option best describes your current role?
+        <select id="dropdown" name="dropdown">
+          <option value="">Select current role</option>
+          <option value="pg">Point Guard</option>
+          <option value="sg">Shooting Guard</option>
+          <option value="sf">Small Forward</option>
+          <option value="pf">Power Forward</option>
+          <option value="c">Center</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      Would you recommend freeCodeCamp to a friend?
+      <label for="Definitely">
+        <input id="Definitely" type="radio" name="recommend-type" class="inline" value="Definitely" checked /> Definitely
+      </label>
+      <label for="Maybe">
+        <input id="Maybe" type="radio" name="recommend-type" class="inline" value="Maybe" /> Maybe
+      </label>
+      <label for="Not sure">
+        <input id="Not sure" type="radio" name="recommend-type" class="inline" value="Not sure" /> Not sure
+      </label>
+    </fieldset>
+    <fieldset>
+      <label for="favorite-feature">What's your favorite NBA team?
+        <select id="favorite-feature" name="favorite-feature">
+          <option value="">Select an option</option>
+          <option value="hawks">Atlanta Hawks</option>
+          <option value="celtics">Boston Celtics</option>
+          <option value="nets">Brooklyn Nets</option>
+          <option value="hornets">Charlotte Hornets</option>
+          <option value="bulls">Chicago Bulls</option>
+          <option value="cavs">Cleveland Cavaliers</option>
+          <option value="mavericks">Dallas Mavericks</option>
+          <option value="nuggets">Denver Nuggets</option>
+          <option value="pistons">Detroit Pistons</option>
+          <option value="warriors">Golden State Warriors</option>
+          <option value="rockets">Houston Rockets</option>
+          <option value="pacers">Indiana Pacers</option>
+          <option value="clippers">Los Angeles Clippers</option>
+          <option value="lakers">Los Angeles Lakers</option>
+          <option value="grizzlies">Memphis Grizzlies</option>
+          <option value="heat">Miami Heat</option>
+          <option value="bucks">Milwaukee Bucks</option>
+          <option value="timberwolves">Minnesota Timberwolves</option>
+          <option value="pelicans">New Orleans Pelicans</option>
+          <option value="knicks">New York Knicks</option>
+          <option value="thunder">Oklahoma City Thunder</option>
+          <option value="magic">Orlando Magic</option>
+          <option value="sixers">Philadelphia 76ers</option>
+          <option value="suns">Phoenix Suns</option>
+          <option value="blazers">Portland Trail Blazers</option>
+          <option value="kings">Sacramento Kings</option>
+          <option value="spurs">San Antonio Spurs</option>
+          <option value="raptors">Toronto Raptors</option>
+          <option value="jazz">Utah Jazz</option>
+          <option value="wizards">Washington Wizards</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>What would you like to change in the NBA? (Check all that apply)</legend>
+      <label for="start-times"><input id="start-times" type="checkbox" name="changes" value="Start Times" /> Start Times</label>
+      <label for="lottery-system"><input id="lottery-system" type="checkbox" name="changes" value="Playoff Lottery System" /> Change the Playoff System to a Lottery System</label>
+      <label for="more-emotion"><input id="more-emotion" type="checkbox" name="changes" value="More Emotion" /> Allow More Emotion in the Sport</label>
+      <label for="european-fan-culture"><input id="european-fan-culture" type="checkbox" name="changes" value="European Fan Culture" /> Change Fan Culture to a European Style</label>
+      <label for="remove-paywall"><input id="remove-paywall" type="checkbox" name="changes" value="Remove Paywall" /> Remove Paywall to Watch NBA</label>
+      <label for="cheaper-tickets"><input id="cheaper-tickets" type="checkbox" name="changes" value="Cheaper Tickets" /> Make NBA Tickets Cheaper</label>
+      <label for="prize-money"><input id="prize-money" type="checkbox" name="changes" value="Prize Money" /> Substantial Prize Money for Best and Second Best Regular Season Records</label>
+      <label for="flatten-lottery-odds"><input id="flatten-lottery-odds" type="checkbox" name="changes" value="Flatten Lottery Odds" /> Flatten the Lottery Odds for Non-Playoff Teams</label>
+      <label for="less-ticky-tacky-fouls"><input id="less-ticky-tacky-fouls" type="checkbox" name="changes" value="Less Ticky-Tacky Fouls" /> Stop Calling Ticky-Tacky Fouls</label>
+      <label for="more-challenges"><input id="more-challenges" type="checkbox" name="changes" value="More Challenges" /> Allow More Challenges with a Reward for Correct Ones</label>
+      <label for="shorter-timeouts"><input id="shorter-timeouts" type="checkbox" name="changes" value="Shorter Timeouts" /> Fewer or Shorter Timeouts</label>
+    </fieldset>
+    <fieldset>
+      <label for="comments">Tell us about your playing style?
+        <textarea id="comments" name="comments" placeholder="Enter your playing style here"></textarea>
+      </label>
+    </fieldset>
+    <input id="submit" class="submit" type="submit" value="Submit" />
+  </form>
+</body>
+</html>
+
